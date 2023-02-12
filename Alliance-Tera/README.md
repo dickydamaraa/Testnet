@@ -13,6 +13,8 @@
 # DISCLAIMER
 PLEASE, READ IT CAREFULLY, YOU NEED TO CHANGE IT WITH MANUAL. DONT JUST COPY & PASTE. READ IT CAREFULLY AND EXECUTE WITH FULL MIND & LOGIC.
 
+CHOOSE FOLDER CHAIN TO RUN VALIDATOR. PICK ONE OR IF YOU WANT TO RUN ALL CHAIN, UP TO YOU.
+
 # Alliance node setup testnet
 Official documentation:
 - Faucet : https://game-of-alliance.terra.money/faucet
@@ -20,12 +22,6 @@ Official documentation:
 - Github: https://github.com/terra-money/alliance/
 - Discord: https://discord.gg/terra-money
 - Docs alliance terra : https://alliance.terra.money/
-
-## Chain Alliance Terra
-• Chain ID: ordos-1 - Denom: uord - Executable: ordosd \
-• Chain ID: corrino-1 - Denom: ucor - Executable: corrinod \
-• Chain ID: harkonnen-1 - Denom: uhar - Executable: harkonnend \
-• Chain ID: atreides-1 - Denom: uatr - Executable: atreidesd
 
 ## Hardware requirements
 Same with any cosmos-SDK chain, check this out!
@@ -39,38 +35,6 @@ Minimum Hardware Requirements : \
 • Open port 26656
 
 **Thats requirements if you want run with local device, but my advice it will great if you rent a VPS and your server will online 24x7**
-
-## Node setup
-### • Automatic Installation •
-You can setup your mainnet node in few minutes with this script below. Just follow the instructions.\
-Note : **I prefer on manual, so you can learn new experience to solve problem :) **
-```
-wget -O jointest.sh https://raw.githubusercontent.com/dickydamaraa/Testnet/main/Alliance-Tera/auto.sh && chmod +x jointest.sh
-```
-
-### Execute installation with chain
-```
-./jointest.sh -c {CHAIN}  # CHANGE {CHAIN} AS YOU WANT
-```
-Example :
-```
-./jointest.sh -c ordos-1
-```
-============================================================================================
-## Step after installation
-After you install binaries, you need to read again on here, what executable you should use.
-
-{EXECUTABLE} > Change with chain with you install before \
-{CHAIN ID}   > Change with same chain before \
-{DENOM}      > Change with same denom with chain
-============================================================================================
-Example : 
-Assume you install with chain `harkonnen-1` \
-• You need REPLACE {EXECUTABLE} `harkonennend` \
-• You need REPLACE {CHAIN ID} `harkonnen-1` \
-• You need REPALCE {DENOM} > `uhar`
----------------------------------------------
-
 
 
 
@@ -91,21 +55,6 @@ To see current keys
 ```
 {EXECUTABLE} keys list
 ```
-
-### Setting Seeds
-Open dir config, and find "seed"
-cd .{EXECUTABLE}/config/config.yaml
-
-Then, you can choose seed as your chain on here, paste it in config.yaml :
-
-| Chains | Seeds |
-| --- | --- |
-| `atreides-1` | 36b2547e91dbaa1a6196217f25b767a8630fb0b2@54.196.186.174:41456,cd19f4418b3cd10951060aad1c4b4baf82177292@35.168.16.221:41456,d634d42f4f84caa0db7c718353090fd7973e702e@goa-seeds.lavenderfive.com:13656 |
-| `corrino-1` | 5260976afec974fc0dea05be875841b126a6e322@54.196.186.174:41256,b59f1343587f64047ad331fd8ca8382887d34233@35.168.16.221:41256,2a78b8849872d641d61d97b95f7349540e9d8df0@goa-seeds.lavenderfive.com:12656 |
-| `harkonnen-1` | eeb02ac1de00fdb83179de62b897b15b27c65a55@54.196.186.174:41156,15e474a5163a3e63d4030c14e6e42cfd6e4d5afc@35.168.16.221:41156,1772a7a48530cc8adc447fdb7b720c064411667b@goa-seeds.lavenderfive.com:11656 |
-| `ordos-1` | 2c66624a7bbecd94e8be4005d0ece19ce284d7c3@54.196.186.174:41356,6ebf0000ee85ff987f1d9de3223d605745736ca9@35.168.16.221:41356,71f96fe3eec96b9501043613a32a5a306a8f656b@goa-seeds.lavenderfive.com:10656 |
-
-
 ### Create systemctl
 ```
 sudo tee /etc/systemd/system/{EXECUTABLE}.service > /dev/null <<EOF
