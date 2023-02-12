@@ -58,8 +58,8 @@ Example :
 ```
 ============================================================================================
 ## Step after installation
-After you install binaries, you need to read again on here, what executable you should use. 
--
+After you install binaries, you need to read again on here, what executable you should use. \
+
 Example :
 If you install with chain `harkonnen-1` \
 • You need REPLACE {EXECUTABLE} `harkonennend` \
