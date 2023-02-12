@@ -45,7 +45,7 @@ Minimum Hardware Requirements : \
 You can setup your mainnet node in few minutes with this script below. Just follow the instructions.\
 Note : **I prefer on manual, so you can learn new experience to solve problem :) **
 ```
-wget -O jointest.sh https://raw.githubusercontent.com/Testnet/main/Alliance-Tera/auto.sh && chmod +x jointest.sh
+wget -O jointest.sh https://raw.githubusercontent.com/dickydamaraa/Testnet/main/Alliance-Tera/auto.sh && chmod +x jointest.sh
 ```
 
 ### Execute installation with chain
