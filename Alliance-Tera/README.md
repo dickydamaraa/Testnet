@@ -32,7 +32,7 @@ Same with any cosmos-SDK chain, check this out!
 
 Minimum Hardware Requirements : \
 • Ubuntu 22.04 \
-• 4 CPU \ 
+• 4 CPU \
 • 8gb ram \
 • 200GB SSD NVME \
 • Permanent Internet connection (traffic will be minimal during run node; 10Mbps will be plenty - for production at least 100Mbps is expected) \
