@@ -68,10 +68,10 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-    
+```
 sudo systemctl daemon-reload
 sudo systemctl enable ordosd
-
+```
 ### Create validator
 Make sure your node was synced to false status, before create validator
 

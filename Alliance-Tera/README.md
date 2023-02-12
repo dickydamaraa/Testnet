@@ -64,7 +64,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$(which {EXECUTABLE})
+ExecStart=$(which {EXECUTABLE}) start
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
@@ -73,10 +73,10 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 ```
-    
+```
 sudo systemctl daemon-reload
 sudo systemctl enable {EXECUTABLE}
-
+```
 ### Create validator
 Make sure your node was synced to false status, before create validator
 
