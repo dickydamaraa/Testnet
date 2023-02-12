@@ -7,7 +7,7 @@
 
 
 <p align="center">
-  <img height="100" height="auto" src="https://cdn.builder.io/api/v1/image/assets%2F580ff9284d33405f94bd899116dbdf56%2F1846b26b1cf2456bb5da6004e6629645?width=132">
+  <img height="100" height="auto" src="🤝">
 </p>
 
 
