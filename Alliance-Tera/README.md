@@ -61,7 +61,11 @@ Example :
 After you install binaries, you need to read again on here, what executable you should use. 
 -
 Example :
-If you install with chain harkonnen, you need use executable `harkonennend` \
+If you install with chain `harkonnen-1` \
+• You need REPLACE {EXECUTABLE} `harkonennend` \
+• You need REPLACE {CHAIN ID} `harkonnen-1` \
+• You need REPALCE {DENOM} > `uhar`
+---------------------------------------------
 {EXECUTABLE} > Change with chain with you install before \
 {CHAIN ID}   > Change with same chain before \
 {DENOM}      > Change with same denom with chain
