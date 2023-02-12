@@ -10,6 +10,8 @@
   <img height="100" height="auto" src="https://github.githubassets.com/images/icons/emoji/unicode/1f91d.png">
 </p>
 
+# DISCLAIMER
+PLEASE, READ IT CAREFULLY, YOU NEED TO CHANGE IT WITH MANUAL. DONT JUST COPY & PASTE. READ IT CAREFULLY AND EXECUTE WITH FULL MIND & LOGIC.
 
 # Alliance node setup testnet
 Official documentation:
@@ -97,6 +99,28 @@ Then, you can choose seed as your chain on here, paste it in config.yaml :
 | `harkonnen-1` | eeb02ac1de00fdb83179de62b897b15b27c65a55@54.196.186.174:41156,15e474a5163a3e63d4030c14e6e42cfd6e4d5afc@35.168.16.221:41156,1772a7a48530cc8adc447fdb7b720c064411667b@goa-seeds.lavenderfive.com:11656 |
 | `ordos-1` | 2c66624a7bbecd94e8be4005d0ece19ce284d7c3@54.196.186.174:41356,6ebf0000ee85ff987f1d9de3223d605745736ca9@35.168.16.221:41356,71f96fe3eec96b9501043613a32a5a306a8f656b@goa-seeds.lavenderfive.com:10656 |
 
+
+### Create systemctl
+```
+sudo tee /etc/systemd/system/{EXECUTABLE}.service > /dev/null <<EOF
+[Unit]
+Description={EXECUTABLE} - Service
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=$(which {EXECUTABLE})
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```
+    
+sudo systemctl daemon-reload
+sudo systemctl enable {EXECUTABLE}
 
 ### Create validator
 Make sure your node was synced to false status, before create validator
