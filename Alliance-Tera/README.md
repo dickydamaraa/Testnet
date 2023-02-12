@@ -63,7 +63,7 @@ After you install binaries, you need to read again on here, what executable you 
 {EXECUTABLE} > Change with chain with you install before \
 {CHAIN ID}   > Change with same chain before \
 {DENOM}      > Change with same denom with chain
-
+============================================================================================
 Example : 
 Assume you install with chain `harkonnen-1` \
 • You need REPLACE {EXECUTABLE} `harkonennend` \
