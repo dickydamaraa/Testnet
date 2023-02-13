@@ -12,7 +12,7 @@ wget -O harkonnen.sh https://raw.githubusercontent.com/dickydamaraa/Testnet/main
 
 ### Execute installation with chain
 ```
-./jointest.sh -c harkonnen-1
+./harkonnen.sh -c harkonnen-1
 ```
 ============================================================================================
 ### Copy binaries to bin

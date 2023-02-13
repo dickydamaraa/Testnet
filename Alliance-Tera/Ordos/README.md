@@ -12,7 +12,7 @@ wget -O ordos.sh https://raw.githubusercontent.com/dickydamaraa/Testnet/main/All
 
 ### Execute installation with chain
 ```
-./jointest.sh -c ordos-1
+./ordos.sh -c ordos-1
 ```
 ============================================================================================
 ### Copy binaries to bin

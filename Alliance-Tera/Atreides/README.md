@@ -12,7 +12,7 @@ wget -O atreides.sh https://raw.githubusercontent.com/dickydamaraa/Testnet/main/
 
 ### Execute installation with chain
 ```
-./jointest.sh -c atreides-1
+./atreides.sh -c atreides-1
 ```
 ============================================================================================
 ### Copy binaries to bin
